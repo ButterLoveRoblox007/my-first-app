@@ -7,6 +7,7 @@ B_discount = st.number_input("กรอกส่วนลด (%):", min_value=0.
 A_discount = price * (B_discount / 100)      
 A_price = price - A_discount                 
 vat = A_price * 0.07                         
+net_price = A_price + vat                         
 
 st.divider()
 
